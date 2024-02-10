@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --color-primary: #1e2a17;
+    --color-white: white;
+    --color-gray: #3f3f3f;
+    --color-custom: #5c913b;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%; 
+}
+a {
+    text-decoration: none;
+    color: var(--color-gray);
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color: var(--color-white);
+
+}
+.cabecalho li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    font-size: 30px;
+}
+.show img {
+    max-width: 100%;
+    height: auto;
+}
+.show img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.imgFundo {
+    z-index: -2;
+}
+
+.titleShow {
+    color: var(--color-white);
+    font-size: 80px; /* Added font-size property */
+}
+.subtittleShow,
+.subtittleShow2 {
+    color: var(--color-white);
+    font-size: 40px;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
