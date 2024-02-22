@@ -3,40 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
     <title>Eunápolis</title>
-    <link rel="icon" href="imagens/POMBO.png" />
+    <link rel="icon" href="imagens/pombo.png" />
   </head>
   
   <body>
     <!--CABEÇALHO-->
-    <header class="cabecalho">
-      <ul class="cabecalho">
-        <img src="imagens/EUNÁPOLISlogo.png" alt="" class="logo" />
-        <li class="cabecalhoText">
-          <ul class="menu">
-            <li><a href="">INICIO</a></li>
-            <li><a href="">SOBRE</a></li>
-            <li><a href="#servico">SERVIÇOS</a></li>
-            <li><a href="">CATÁLOGO</a></li>
-            <li><a href="">CONTATO</a></li>
-          </ul>
-        </li>
-      </ul>
+    <header id="header">
+      <nav>
+        <img src="imagens/EunápolisLogo.png" alt="" class="logo" />
+        <ul class="cabecalho">
+          <li class="cabecalhoText">
+            <ul class="menu">
+              <li><a href="#home">INICIO</a></li>
+              <li><a href="#about">SOBRE</a></li>
+              <li><a href="#service">SERVIÇOS</a></li>
+              <li><a href="">CATÁLOGO</a></li>
+              <li><a href="#contact">CONTATO</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!--CONTEUDO-->
-    <main class="corpo">
-      <section class="show">
+    <main>
+      <section class="show" id="home">
         <img src="imagens/Rectangle 9.png" alt="" class="imgFundo" />
         <img src="imagens/Rectangle 11.png" alt="" class="imgFrot" />
-        <h1 class="titleShow">SERVIÇOS FUNERÁRIOS</h1>
-        <h2 class="subtittleShow">
-          Urnas, Coroa de flores, Translado nacional
-        </h2>
-        <h2 class="subtittleShow2">Fale conosco e solicite um orçamento</h2>
+        <div class="banner">
+          <h1 class="titleShow">SERVIÇOS FUNERÁRIOS</h1>
+          <h2 class="subtittleShow">
+            Urnas, Coroa de flores, Translado nacional
+          </h2>
+          <h2 class="subtittleShow2">Fale conosco e solicite um orçamento</h2>
+          <a href="" class="btn"><img src="imagens/whatsappLogo.png" alt="Logo WhatsApp">WhatsApp</a>
+        </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h2>QUEM SOMOS</h2>
         <h3>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -49,7 +62,7 @@
         <img src="imagens/EUNÁPOLISlogo.png" alt="" />
         </section>
         <!--SERVIÇOS-->
-      <section class="service">
+      <section class="service" id="service">
         <h2 id="servico">SERVIÇOS</h2>
         <ul class="servicos">
           <li>
@@ -92,7 +105,7 @@
         </ul>
         <!--contato-->
       </section>
-      <section class="comunica">
+      <section class="comunica" id="contact">
         <section class="comunica_texto">
           <section class="comunica_texto_formulario">
             <h1>FALE CONOSCO</h1>

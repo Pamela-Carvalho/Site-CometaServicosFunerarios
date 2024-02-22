@@ -7,44 +7,83 @@
     padding: 0;
 }
 
-
+/* base */
 :root {
     --color-primary: #1e2a17;
     --color-white: white;
     --color-gray: #3f3f3f;
+    --color-green: #314326;
     --color-custom: #5c913b;
     font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
     margin: 0%;
     padding: 0%; 
     scroll-behavior: smooth;
 }
+
+main {
+    margin-top: 5.75rem;
+    position: relative;
+    display: inline-block;
+}
+
+header {
+    padding: 0.75rem 6.5rem;
+}
+
+section {
+    justify-content: center;
+}
+
+section:first-child {
+    margin-top: 3.5rem;
+}
+
 a {
     text-decoration: none;
     color: var(--color-gray);
+}
+
+/* navigation */
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-white);
+    box-shadow: 0 0 1rem var(--color-gray);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img{
+    height: min-content;
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
-    background-color: var(--color-white);
-
 }
+
 .cabecalho li {
     list-style: none;
     display: inline;
     margin: 0 20px;
-    font-size: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-.corpo{
-    padding: 5% 0 5% 0%;
 
-}
+/* home */
 .show img {
     max-width: 100%;
     height: auto;
 }
+
 .show img {
     max-width: 100%;
     height: auto;
@@ -56,15 +95,57 @@ a {
     z-index: -2;
 }
 
+.banner {
+    padding: 10rem 8rem;
+}
+
+.banner h1, 
+.banner h2 {
+    margin-bottom: 2rem;
+}
+
 .titleShow {
     color: var(--color-white);
-    font-size: 80px; /* Added font-size property */
+    font-size: 4rem; /* Added font-size property */
+    font-weight: 700;
+    text-shadow: 0 0 0.5rem var(--color-gray);
 }
-.subtittleShow,
-.subtittleShow2 {
+
+.subtittleShow {
     color: var(--color-white);
-    font-size: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0 0 0.5rem var(--color-gray);
 }
+
+.subtittleShow2 {
+    color: var(--color-green);
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0 0 0.5rem rgba(241, 241, 241, 0.75);
+}
+
+.show .btn {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.5vw;
+    height: 8.5vh;
+    color: #00A859;
+    box-shadow: 0 0 1rem rgba(122, 122, 122, 0.75);
+    border-radius: 25rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.show .btn img {
+    position: relative;
+    z-index: 0;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
 .servicos img {
     max-width:50%;
     width: auto;
