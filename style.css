@@ -12,6 +12,7 @@
     --color-primary: #1e2a17;
     --color-white: white;
     --color-gray: #3f3f3f;
+    --color-light-gray: #c3cdd3;
     --color-green: #314326;
     --color-custom: #5c913b;
     font-family: 'Roboto', sans-serif;
@@ -23,7 +24,7 @@
 }
 
 main {
-    margin-top: 5.75rem;
+    margin-top: 5.7rem;
     position: relative;
     display: inline-block;
 }
@@ -51,7 +52,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: var(--color-white);
+    background-color: var(--color-primary);
     box-shadow: 0 0 1rem var(--color-gray);
 }
 
@@ -75,7 +76,11 @@ nav img{
     display: inline;
     margin: 0 20px;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
+}
+
+.cabecalho li a {
+    color: var(--color-light-gray);
 }
 
 /* home */
