@@ -1,174 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- style -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
 
-    <title>Eunápolis</title>
-    <link rel="icon" href="imagens/pombo.png" />
-  </head>
-  
-  <body>
-    <!--CABEÇALHO-->
-    <header id="header">
-      <nav>
-        <img src="imagens/EunápolisLogo.png" alt="" class="logo" />
-        <ul class="cabecalho">
-          <li class="cabecalhoText">
-            <ul class="menu">
-              <li><a href="#home">INICIO</a></li>
-              <li><a href="#about">SOBRE</a></li>
-              <li><a href="#service">SERVIÇOS</a></li>
-              <li><a href="">CATÁLOGO</a></li>
-              <li><a href="#contact">CONTATO</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--CONTEUDO-->
-    <main>
-      <section class="show" id="home">
-        <img src="imagens/Rectangle 9.png" alt="" class="imgFundo" />
-        <img src="imagens/Rectangle 11.png" alt="" class="imgFrot" />
-        <div class="banner">
-          <h1 class="titleShow">SERVIÇOS FUNERÁRIOS</h1>
-          <h2 class="subtittleShow">
-            Urnas, Coroa de flores, Translado nacional
-          </h2>
-          <h2 class="subtittleShow2">Fale conosco e solicite um orçamento</h2>
-          <a href="" class="btn"><img src="imagens/whatsappLogo.png" alt="Logo WhatsApp">WhatsApp</a>
-        </div>
-      </section>
-      <section class="about" id="about">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <title>Eunápolis</title>
+  <link rel="icon" href="imagens/pombo.png" />
+</head>
+
+<body>
+  <!--CABEÇALHO-->
+  <header id="header">
+    <nav>
+      <img src="imagens/EunápolisLogo.png" alt="" class="logo" />
+      <ul class="cabecalho">
+        <li class="cabecalhoText">
+          <ul class="menu">
+            <li><a href="#home">INICIO</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#service">SERVIÇOS</a></li>
+            <li><a href="">CATÁLOGO</a></li>
+            <li><a href="#contact">CONTATO</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--CONTEUDO-->
+  <main>
+    <section class="show" id="home">
+      <img src="imagens/Rectangle 9.png" alt="" class="imgFundo" />
+      <img src="imagens/Rectangle 11.png" alt="" class="imgFrot" />
+      <div class="banner">
+        <h1 class="titleShow">SERVIÇOS FUNERÁRIOS</h1>
+        <h2 class="subtittleShow">
+          Urnas, Coroa de flores, Translado nacional
+        </h2>
+        <h2 class="subtittleShow2">Fale conosco e solicite um orçamento</h2>
+        <a href="" class="btn"><img src="imagens/whatsappLogo.png" alt="Logo WhatsApp">WhatsApp</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div>
         <h2>QUEM SOMOS</h2>
-        <h3>
+        <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.”
-        </h3>
+        </p>
+      </div>
+      <div>
         <img src="imagens/EUNÁPOLISlogo.png" alt="" />
-        </section>
-        <!--SERVIÇOS-->
-      <section class="service" id="service">
-        <h2 id="servico">SERVIÇOS</h2>
-        <ul class="servicos">
-          <li>
+      </div>
+    </section>
+    <!--SERVIÇOS-->
+    <section class="service" id="service">
+      <h2 id="servico">SERVIÇOS</h2>
+      <ul class="servicos">
+        <li class="card-service">
+          <div>
             <img src="imagens/urna.png" alt="" />
-            <h3 class="serviceTitle">URNAS</h3>
+            <div>
+              <h3 class="serviceTitle">URNAS</h3>
+            </div>
+          </div>
+          <div>
             <p>
               Urnas à pronta entrega e sob encomenda. Confira nosso catálogo.
             </p>
-            </li>
-            <li>
+            <a href="">Acessar &raquo;</a>
+          </div>
+        </li>
+        <li class="card-service">
+          <div>
             <img src="imagens/coroa_de_flor.png" alt="" />
-            <h3 class="serviceTitle">COROA DE FLORES</h3>
+            <div>
+              <h3 class="serviceTitle">COROA DE FLORES</h3>
+            </div>
+          </div>
+          <div>
             <p>
               Diversos modelos de coroas de flores disponíveis. Confira nosso
               catálogo.
             </p>
-            </li>
-            <li>
+            <a href="">Acessar &raquo;</a>
+          </div>
+        </li>
+        <li class="card-service">
+          <div>
             <img src="imagens/tanopraxia.png" alt="" />
-            <h3 class="serviceTitle">TANOPRAXIA</h3>
+            <div>
+              <h3 class="serviceTitle">TANATOPRAXIA</h3>
+            </div>
+          </div>
+          <div>
             <p>Realizamos serviço de tanatopraxia. Solicite um orçamento.</p>
-            </li>
-            <li>
+            <a href="">Acessar &raquo;</a>
+          </div>
+        </li>
+        <li class="card-service">
+          <div>
             <img src="imagens/translado.png" alt="" />
-            <h3 class="serviceTitle">TRANSLADO</h3>
+            <div>
+              <h3 class="serviceTitle">TRANSLADO</h3>
+            </div>
+          </div>
+          <div>
             <p>
               Translado para todo território nacional. Solicite um orçamento.
             </p>
-            </li>
-            <li>
+            <a href="">Acessar &raquo;</a>
+          </div>
+        </li>
+        <li class="card-service">
+          <div>
             <img src="imagens/cremação.png" alt="" />
-            <h3 class="serviceTitle">CREMAÇÃO</h3>
+            <div>
+              <h3 class="serviceTitle">CREMAÇÃO</h3>
+            </div>
+          </div>
+          <div>
             <p>Realizamos serviço de cremação. Solicite um orçamento.</p>
-            </li>
-            <li>
+            <a href="">Acessar &raquo;</a>
+          </div>
+        </li>
+        <li class="card-service">
+          <div>
             <img src="imagens/pet.png" alt="" />
-            <h3 class="serviceTitle">SERVIÇO PET</h3>
+            <div>
+              <h3 class="serviceTitle">SERVIÇO PET</h3>
+            </div>
+          </div>
+          <div>
             <p>Oferecemos serviço completo para Pets. Saiba mais.</p>
-            </li>
-        </ul>
-        <!--contato-->
-      </section>
-      <section class="comunica" id="contact">
-        <section class="comunica_texto">
-          <section class="comunica_texto_formulario">
-            <h1>FALE CONOSCO</h1>
-            <p>Será um prazer receber seu contato</p>
-            <p>Se preferir utilize o formulario abaixo</p>
-            <textarea name="Nome" id="Nm" cols="90" rows="1"
-              placeholder="Nome:"
-            ></textarea>
-            <textarea
-              name="E-mail"
-              id="mail"
-              cols="90"
-              rows="1"
-              placeholder="E-mail:"
-            ></textarea>
-            <textarea
-              name="Telefone"
-              id="obs"
-              cols="90"
-              rows="1"
-              placeholder="Telefone:"
-            ></textarea>
-            <textarea
-              name="Assunto"
-              id="obs"
-              cols="90"
-              rows="1"
-              placeholder="Assunto:"
-            ></textarea>
-            <textarea
-              name="Mensagem:"
-              id="obs"
-              cols="90"
-              rows="3"
-              placeholder="Mensagem:"
-            ></textarea>
-          </section>
-          <section class="comunica_texto_contato">
-            <h1>NOSSOS CONTATOS</h1>
-            <p>Rodovia BR 158, Km 207, PR, 87300-970</p>
-            <p>+55 44 1234-5678</p>
-            <p>contato@archcosmos.com.br</p>
-            <h2>nos siga em nossas redes</h2>
-            <section class="explica_links">
-              <a href="" class="explica_link">Instagram</a>
-              <a href="" class="explica_link" img>Youtube</a>
-            </section>
-            </section>
-            </section>
-            </section>
-    </main>
-    <!--RODAPÉ-->
-    <section>
-      <footer class="rodape">
-        <img src="imagens/EUNÁPOLISlogo.png" alt="">
-        <section>
-          <p>CONTATO</p>  
-          <p>Cel: (00) 00000-0000</p>
-            <p>Fone: (00) 0000-0000</p>
-            <p>Email: email@email.com</p>
-          <p>CONHEÇA NOSSAS REDES</p>
-        </section>
-      </footer>
+            <a href="">Acessar &raquo;</a>
+          </div>
+        </li>
+      </ul>
+      <!--contato-->
     </section>
-  </body>
+    <section class="comunica" id="contact">
+      <section class="comunica_texto">
+        <section class="comunica_texto_formulario">
+          <h1>FALE CONOSCO</h1>
+          <p>Será um prazer receber seu contato</p>
+          <p>Se preferir utilize o formulario abaixo</p>
+          <textarea name="Nome" id="Nm" cols="90" rows="1" placeholder="Nome:"></textarea>
+          <textarea name="E-mail" id="mail" cols="90" rows="1" placeholder="E-mail:"></textarea>
+          <textarea name="Telefone" id="obs" cols="90" rows="1" placeholder="Telefone:"></textarea>
+          <textarea name="Assunto" id="obs" cols="90" rows="1" placeholder="Assunto:"></textarea>
+          <textarea name="Mensagem:" id="obs" cols="90" rows="3" placeholder="Mensagem:"></textarea>
+        </section>
+        <section class="comunica_texto_contato">
+          <h1>NOSSOS CONTATOS</h1>
+          <p>Rodovia BR 158, Km 207, PR, 87300-970</p>
+          <p>+55 44 1234-5678</p>
+          <p>contato@archcosmos.com.br</p>
+          <h2>nos siga em nossas redes</h2>
+          <section class="explica_links">
+            <a href="" class="explica_link">Instagram</a>
+            <a href="" class="explica_link" img>Youtube</a>
+          </section>
+        </section>
+      </section>
+    </section>
+  </main>
+  <!--RODAPÉ-->
+  <section>
+    <footer class="rodape">
+      <img src="imagens/EUNÁPOLISlogo.png" alt="">
+      <section>
+        <p>CONTATO</p>
+        <p>Cel: (00) 00000-0000</p>
+        <p>Fone: (00) 0000-0000</p>
+        <p>Email: email@email.com</p>
+        <p>CONHEÇA NOSSAS REDES</p>
+      </section>
+    </footer>
+  </section>
+</body>
+
 </html>

@@ -46,6 +46,12 @@ a {
     color: var(--color-gray);
 }
 
+#about,
+#service,
+#contact {
+    padding: 3rem 8rem;
+}
+
 /* navigation */
 #header {
     width: 100%;
@@ -151,26 +157,96 @@ nav img{
     margin-right: 1rem;
 }
 
-.servicos img {
-    max-width:50%;
-    width: auto;
-    height: auto;
+/* about */
+.about {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-gray);
+    line-height: 1.5em;
 }
+
+.about h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+}
+
+.about div {
+    max-width: 40rem;
+}
+
+.about img {
+    width: 110%;
+}
+
+/* services */
+.service h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+}
+
 .servicos p {
-    font-size: 22px;
+    font-size: 1.1rem;
+    line-height: 1.2em;
     color: var(--color-primary);
+    margin-bottom: 1rem;
 }
 .servicos h3 {
-    font-size: 24px;
+    font-size: 1.1rem;
     color: var(--color-custom);
+    font-weight: 500;
 }
 .servicos {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     height: 300px ;
     color: var(--color-white);
 }
+
+.card-service {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    display: grid;
+}
+
+.servicos li:first-child {
+    margin: 0 0.5rem 0 0;
+}
+
+.servicos li:last-child {
+    margin: 0 0 0 0.5rem;
+}
+
+.card-service div {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: fit-content;
+    display: grid;
+}
+
+.card-service div:last-child {
+    height: 100%;
+}
+
+.card-service div div {
+    justify-content: start;
+}
+
+.card-service img {
+    margin-bottom: 1rem;
+    width:10rem;
+    height: auto;
+}
+
+.card-service a {
+    font-size: 0.9rem;
+    align-self: end;
+}
+
+
 .comunica_texto {
     display: flex;
     justify-content: space-between;
