@@ -71,21 +71,21 @@ nav img{
     height: min-content;
 }
 
-.cabecalho {
+.header {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.cabecalho li {
+.header li {
     list-style: none;
     display: inline;
     margin: 0 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
-.cabecalho li a {
+.header li a {
     color: var(--color-light-gray);
 }
 
@@ -117,21 +117,21 @@ nav img{
 
 .titleShow {
     color: var(--color-white);
-    font-size: 4rem; /* Added font-size property */
+    font-size: 3rem; /* Added font-size property */
     font-weight: 700;
     text-shadow: 0 0 0.5rem var(--color-gray);
 }
 
 .subtittleShow {
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
     text-shadow: 0 0 0.5rem var(--color-gray);
 }
 
 .subtittleShow2 {
     color: var(--color-green);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
     text-shadow: 0 0 0.5rem rgba(241, 241, 241, 0.75);
 }
@@ -141,19 +141,19 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18.5vw;
+    width: 13.5vw;
     height: 8.5vh;
     color: #00A859;
     box-shadow: 0 0 1rem rgba(122, 122, 122, 0.75);
     border-radius: 25rem;
-    font-size: 1.75rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 .show .btn img {
     position: relative;
     z-index: 0;
-    height: 2.5rem;
+    height: 2.25rem;
     margin-right: 1rem;
 }
 
@@ -170,10 +170,6 @@ nav img{
     font-size: 1.5rem;
     color: var(--color-gray);
     margin-bottom: 2rem;
-}
-
-.about div {
-    max-width: 40rem;
 }
 
 .about img {
@@ -194,11 +190,13 @@ nav img{
     color: var(--color-primary);
     margin-bottom: 1rem;
 }
+
 .servicos h3 {
     font-size: 1.1rem;
     color: var(--color-custom);
     font-weight: 500;
 }
+
 .servicos {
     display: flex;
     justify-content: space-around;
@@ -222,6 +220,7 @@ nav img{
 
 .card-service div {
     width: 100%;
+    max-width: 30rem;
     margin-bottom: 0.5rem;
     height: fit-content;
     display: grid;
@@ -247,22 +246,60 @@ nav img{
 }
 
 
-.comunica_texto {
+/* contact */
+.contact {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 300px;
     color: var(--color-primary);
 }
 
+.contact h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+}
 
+.contact p {
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
 
+.contact h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+}
 
-.rodape {
+.contact .row {
+    width: 100%;
+}
+
+.contact .btn {
+    color: var(--color-white);
+    background-color: var(--color-green);
+}
+
+.contact button.btn:hover {
+    background-color: var(--color-custom);
+}
+
+/* footer */
+.footer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 270px;
+    align-items: flex-start;
+    padding: 5rem 3.5rem;
     background-color: var(--color-primary);
     color: var(--color-white);
+    line-height: 1.5em;
+}
+
+footer h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
