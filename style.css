@@ -15,7 +15,6 @@
     --color-light-gray: #c3cdd3;
     --color-green: #314326;
     --color-custom: #5c913b;
-    font-family: 'Roboto', sans-serif;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     margin: 0%;
@@ -46,10 +45,19 @@ a {
     color: var(--color-gray);
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+}
+
 #about,
 #service,
-#contact {
+#contact,
+#urnas {
     padding: 3rem 8rem;
+    width: 100vw;
 }
 
 /* navigation */
@@ -165,25 +173,11 @@ nav img{
     line-height: 1.5em;
 }
 
-.about h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: var(--color-gray);
-    margin-bottom: 2rem;
-}
-
 .about img {
     width: 110%;
 }
 
 /* services */
-.service h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: var(--color-gray);
-    margin-bottom: 2rem;
-}
-
 .servicos p {
     font-size: 1.1rem;
     line-height: 1.2em;
@@ -245,19 +239,39 @@ nav img{
     align-self: end;
 }
 
+.locationInfo {
+    color: white;
+    background-color: var(--color-custom);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.locationInfo p {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.locationInfo p:first-child {
+    font-size: 1.5rem
+}
+
+.locationInfo p:last-child {
+    font-weight: 300;
+}
 
 /* contact */
 .contact {
     display: flex;
     justify-content: space-between;
     color: var(--color-primary);
-}
-
-.contact h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: var(--color-gray);
-    margin-bottom: 2rem;
 }
 
 .contact p {
@@ -285,6 +299,23 @@ nav img{
 
 .contact button.btn:hover {
     background-color: var(--color-custom);
+}
+
+/* catálogo */
+.exposition .col {
+    width: 20%;
+}
+
+.exposition .card {
+    border-radius: 1rem;
+}
+
+.exposition .col:first-child {
+    margin-left: 0 !important;
+}
+
+.exposition .col:last-child {
+    margin-right: 0 !important;
 }
 
 /* footer */
