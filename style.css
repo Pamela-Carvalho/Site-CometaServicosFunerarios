@@ -15,11 +15,13 @@
     --color-light-gray: #c3cdd3;
     --color-green: #314326;
     --color-custom: #5c913b;
+    --navbar-toggler-icon: url(imagens/menuIcon.png);
     font-family: "Roboto", sans-serif;
     font-style: normal;
     margin: 0%;
     padding: 0%; 
     scroll-behavior: smooth;
+
 }
 
 main {
@@ -81,20 +83,21 @@ nav img{
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.header li {
+.header div {
     list-style: none;
     display: inline;
-    margin: 0 20px;
-    font-size: 1.2rem;
+    margin: 0 1rem;
+    font-size: 1.15rem;
     font-weight: 400;
 }
 
-.header li a {
+.menu a {
     color: var(--color-light-gray);
+    margin: 1rem;
 }
 
 /* home */
@@ -333,4 +336,50 @@ footer h4 {
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+}
+
+@media(max-width: 1200px) {    
+    nav img{
+        width: 85%;
+    }
+    
+    .header div {
+        list-style: none;
+        display: inline;
+        margin: 0 0.8rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    
+    .menu a {
+        color: var(--color-light-gray);
+        margin: 0.8rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .navbar-toggler {
+        border: none;
+        transition: 0.2s;
+    }
+
+    .navbar-toggler:focus {
+        /* box-shadow: 1px 1px 5px white; */
+        box-shadow: none;
+        border: 1px solid white;
+        transition: 0.2s;
+    }
+
+    .navbar-toggler-icon {
+        background-image: var(--navbar-toggler-icon);
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .header div {
+        display: flex;
+        align-items: center;
+    }
 }
