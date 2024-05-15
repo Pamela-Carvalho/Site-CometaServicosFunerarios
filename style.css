@@ -59,7 +59,7 @@ h2 {
 #contact,
 #urnas {
     padding: 3rem 8rem;
-    width: 100vw;
+    width: 100%;
 }
 
 /* navigation */
@@ -165,7 +165,7 @@ nav img{
     position: relative;
     z-index: 0;
     height: 2.25rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 /* about */
@@ -174,6 +174,10 @@ nav img{
     justify-content: space-between;
     color: var(--color-gray);
     line-height: 1.5em;
+}
+
+.about div {
+    justify-content: space-between;
 }
 
 .about img {
@@ -197,7 +201,7 @@ nav img{
 .servicos {
     display: flex;
     justify-content: space-around;
-    height: 300px ;
+    min-height: 300px ;
     color: var(--color-white);
 }
 
@@ -339,6 +343,7 @@ footer h4 {
 }
 
 @media(max-width: 1200px) {    
+    /* navigation */
     nav img{
         width: 85%;
     }
@@ -355,16 +360,33 @@ footer h4 {
         color: var(--color-light-gray);
         margin: 0.8rem;
     }
+    
+    /* home */
+    .show .btn {
+        width: 13.5vw;
+        height: 8.5vh;
+        font-size: 1.2rem;
+    }
+
+    .show .btn img {
+        height: 2.15rem;
+        margin-right: 0.5rem;
+    }
+
+    /* about */
+    .about p {
+        font-size: 1.1rem;
+    }
 }
 
 @media(max-width: 992px) {
+    /* navigation */
     .navbar-toggler {
         border: none;
         transition: 0.2s;
     }
 
     .navbar-toggler:focus {
-        /* box-shadow: 1px 1px 5px white; */
         box-shadow: none;
         border: 1px solid white;
         transition: 0.2s;
@@ -381,5 +403,83 @@ footer h4 {
     .header div {
         display: flex;
         align-items: center;
+    }
+
+    /* home */
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show .btn {
+        width: 17.5vw;
+        height: 8.5vh;
+        font-size: 1.2rem;
+    }
+
+    .show .btn img {
+        height: 2.15rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media(max-width: 850px) {
+    /* home */
+    .show .btn {
+        width: 20vw;
+    }
+}
+
+@media(max-width: 768px) {
+    /* home */
+    .show .btn {
+        width: 24vw;
+        height: 8.5vh;
+        font-size: 1.3rem;
+    }
+
+    /* about */
+    .about div {
+        margin: 0 !important;
+    }
+
+    .about p {
+        font-size: 1.3rem;
+    }
+
+    /* contact */
+    .contact p,
+    .contact label {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 700px) {
+    #about,
+    #service,
+    #contact,
+    #urnas {
+        padding: 3rem 4rem;
+    }
+    /* services */
+    .servicos {
+        flex-direction: column;
+    }
+
+    .card-service {
+        display: flex;
+    }
+
+    .servicos li {
+        margin: 1rem 0;
+    }
+    
+    .servicos li:first-child {
+        margin-top: 0;
+    }
+    
+    .servicos li:last-child {
+        margin-bottom: 0;
     }
 }
