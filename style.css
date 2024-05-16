@@ -462,6 +462,39 @@ footer h4 {
     #urnas {
         padding: 3rem 4rem;
     }
+
+    /* header */
+    #header {
+        padding: 0.5rem 3rem;
+    }
+
+    /* home */
+    .banner {
+        padding: 4rem 8rem;
+    }
+    
+    .titleShow {
+        font-size: 2.75rem;
+    }
+
+    .banner h1,
+    .banner h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .show .btn {
+        width: 65%;
+    }
+
+    /* about */
+    #about .row div:last-child {
+        display: none !important;
+    }
+
+    #about .row div:first-child {
+        width: 100%;
+    }
+
     /* services */
     .servicos {
         flex-direction: column;
@@ -469,6 +502,11 @@ footer h4 {
 
     .card-service {
         display: flex;
+    }
+
+    .card-service div:first-child {
+        width: fit-content;
+        margin-right: 2rem;
     }
 
     .servicos li {
@@ -481,5 +519,37 @@ footer h4 {
     
     .servicos li:last-child {
         margin-bottom: 0;
+    }
+
+    /* contact */
+    .contact .row {
+        flex-direction: column-reverse;
+    }
+
+    .forms,
+    .location {
+        width: 100%;
+    }
+
+    .location iframe {
+        width: 100%;
+    }
+
+    .forms div:first-child {
+        margin-top: 2rem;
+    }
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+        padding: 4rem;
+    }
+
+    .footer div:first-child {
+        display: none;
+    }
+
+    .footer div:last-child {
+        margin-top: 3rem;
     }
 }
