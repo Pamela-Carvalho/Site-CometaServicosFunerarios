@@ -1,0 +1,33 @@
+@media(max-width: 1085px) and (min-width: 992px) {
+    .navbar-brand {
+        width: 30%;
+    }
+}
+
+@media(max-width: 840px){
+    .exposition .card {
+        max-width: 40%;
+    }
+}
+
+@media(max-width: 992px) {    
+    .navbar-brand {
+        width: 40%;
+    }
+
+    header {
+        padding: 0.75rem 2.5rem;
+    }
+}
+
+@media(max-width: 550px){
+    .exposition .card {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar-brand {
+        width: 70%;
+    }
+}

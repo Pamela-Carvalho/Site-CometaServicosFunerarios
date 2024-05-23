@@ -309,20 +309,15 @@ nav img{
 }
 
 /* catálogo */
-.exposition .col {
-    width: 20%;
+.exposition .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .exposition .card {
     border-radius: 1rem;
-}
-
-.exposition .col:first-child {
-    margin-left: 0 !important;
-}
-
-.exposition .col:last-child {
-    margin-right: 0 !important;
+    margin: 1rem;
 }
 
 /* footer */
@@ -465,12 +460,12 @@ footer h4 {
 
     /* header */
     #header {
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 2rem;
     }
 
     /* home */
     .banner {
-        padding: 4rem 8rem;
+        padding: 4rem 6rem;
     }
     
     .titleShow {
@@ -518,7 +513,7 @@ footer h4 {
     }
     
     .servicos li:last-child {
-        margin-bottom: 0;
+        margin: 0;
     }
 
     /* contact */
