@@ -31,7 +31,7 @@ main {
 }
 
 header {
-    padding: 0.75rem 6.5rem;
+    padding: 0 6.5rem;
 }
 
 section {
@@ -39,7 +39,7 @@ section {
 }
 
 section:first-child {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
 }
 
 a {
@@ -56,7 +56,15 @@ h2 {
 
 #about,
 #service,
-#contact,
+#contact {
+    padding: 12rem 8rem 0;
+    width: 100%;
+}
+
+#contact {
+    padding-bottom: 3rem;
+}
+
 #urnas {
     padding: 3rem 8rem;
     width: 100%;
@@ -118,7 +126,7 @@ nav img{
 }
 
 .banner {
-    padding: 10rem 8rem;
+    padding: 10rem 8rem 0;
 }
 
 .banner h1, 
@@ -308,6 +316,10 @@ nav img{
     background-color: var(--color-custom);
 }
 
+.contact .btn:disabled {
+    cursor: not-allowed;
+}
+
 /* catálogo */
 .exposition .container {
     display: flex;
@@ -453,7 +465,14 @@ footer h4 {
 @media(max-width: 700px) {
     #about,
     #service,
-    #contact,
+    #contact {
+        padding: 12rem 4rem 0;
+    }
+
+    #contact {
+        padding-bottom: 3rem;
+    }
+
     #urnas {
         padding: 3rem 4rem;
     }
@@ -465,7 +484,7 @@ footer h4 {
 
     /* home */
     .banner {
-        padding: 4rem 6rem;
+        padding: 4rem 6rem 0;
     }
     
     .titleShow {

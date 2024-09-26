@@ -23,6 +23,7 @@
       $("#footer").load("footer.html");
     });
   </script>
+  <script defer src="main.js"></script>
 
   <!-- style -->
   <link rel="stylesheet" href="reset.css" />
@@ -45,7 +46,7 @@
   <!-- CONTEÚDO -->
   <main>
     <section class="show" id="home">
-      <img src="imagens/Rectangle 9.png" alt="" class="imgFundo" />
+      <img src="imagens/fundo.jpg" alt="" class="imgFundo" />
       <img src="imagens/Rectangle 11.png" alt="" class="imgFrot" />
       <div class="banner">
         <h1 class="titleShow">SERVIÇOS FUNERÁRIOS</h1>
@@ -53,7 +54,7 @@
           Urnas, Coroa de flores, Translado nacional
         </h2>
         <h2 class="subtittleShow2">Fale conosco e solicite um orçamento</h2>
-        <a href="" class="btn"><img src="imagens/whatsappLogo.png" alt="Logo WhatsApp">WhatsApp</a>
+        <a href="https://wa.me/5573988422296" class="btn"  target="_blank"><img src="imagens/whatsappLogo.png" alt="Logo WhatsApp">WhatsApp</a>
       </div>
     </section>
     <!-- SOBRE -->
@@ -62,12 +63,7 @@
         <div class="col-7">
           <h2>QUEM SOMOS</h2>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.”
+            Somos a Funerária Eunápolis, uma empresa dedicada a oferecer apoio e conforto às famílias em momentos de perda e luto. Estamos comprometidos em cuidar de todos os detalhes necessários para honrar a memória daqueles que partiram, com uma equipe de profissionais qualificados. Nossa missão é proporcionar um serviço acolhedor, respeitoso e de excelência, ajudando as famílias a enfrentarem esse período difícil com dignidade e serenidade.
           </p>
         </div>
         <div class="col-4 ms-5 d-flex align-items-center">
@@ -81,7 +77,7 @@
       <ul class="servicos">
         <li class="card-service">
           <div>
-            <img src="imagens/urna.png" alt="" />
+            <img src="imagens/urna.png" alt="Representação de uma urna funerária gerada por IA. Fonte: Microsoft Designer" />
           </div>
           <div>
             <div>
@@ -90,12 +86,11 @@
             <p>
               Urnas à pronta entrega e sob encomenda. Confira nosso catálogo.
             </p>
-            <a href="">Acessar &raquo;</a>
           </div>
         </li>
         <li class="card-service">
           <div>
-            <img src="imagens/coroa_de_flor.png" alt="" />
+            <img src="imagens/coroaDeFlor.png" alt="Representação de uma coroa de flores gerada por IA. Fonte: Microsoft Designer" />
           </div>
           <div>
             <div>
@@ -105,24 +100,22 @@
               Diversos modelos de coroas de flores disponíveis. Confira nosso
               catálogo.
             </p>
-            <a href="">Acessar &raquo;</a>
           </div>
         </li>
         <li class="card-service">
           <div>
-            <img src="imagens/tanatopraxia.png" alt="" />
+            <img src="imagens/tanatopraxia.png" alt="Representação de um profissional de tanatopraxia colocando luvas gerada por IA. Fonte: Microsoft Designer" />
           </div>
           <div>
             <div>
               <h3 class="serviceTitle">TANATOPRAXIA</h3>
             </div>
             <p>Realizamos serviço de tanatopraxia. Solicite um orçamento.</p>
-            <a href="">Acessar &raquo;</a>
           </div>
         </li>
         <li class="card-service">
           <div>
-            <img src="imagens/translado.png" alt="" />
+            <img src="imagens/translado.png" alt="Representação de um carro funerário gerada por IA. Fonte: Canva Magic Studio" />
           </div>
           <div>
             <div>
@@ -131,31 +124,28 @@
             <p>
               Translado para todo território nacional. Solicite um orçamento.
             </p>
-            <a href="">Acessar &raquo;</a>
           </div>
         </li>
         <li class="card-service">
           <div>
-            <img src="imagens/cremação.png" alt="" />
+            <img src="imagens/cremação.png" alt="Representação de uma urna funerária sendo cremada gerada por IA. Fonte: Canva Magic Studio" />
           </div>
           <div>
             <div>
               <h3 class="serviceTitle">CREMAÇÃO</h3>
             </div>
             <p>Realizamos serviço de cremação. Solicite um orçamento.</p>
-            <a href="">Acessar &raquo;</a>
           </div>
         </li>
         <li class="card-service">
           <div>
-            <img src="imagens/pet.png" alt="" />
+            <img src="imagens/pet.png" alt="Representação de uma urna funerária para pet gerada por IA. Fonte: Microsoft Designer" />
           </div>
           <div>
             <div>
               <h3 class="serviceTitle">SERVIÇO PET</h3>
             </div>
             <p>Oferecemos serviço completo para Pets. Saiba mais.</p>
-            <a href="">Acessar &raquo;</a>
           </div>
         </li>
       </ul>
@@ -173,28 +163,28 @@
             <p>Contate-nos por meio do formulário ou pelos nossos canais oficiais</p>
           </div>
           <div>
-            <form action="">
+            <form action="https://formsubmit.co/ajax/paam.vic19@gmail.com" method="POST" data-form>
               <div class="form-floating mb-1">
-                <input type="text" class="form-control" id="name" placeholder="Olício Dias">
+                <input type="text" class="form-control" id="name" name="Nome" placeholder="Olício Dias" required>
                 <label for="name">Nome</label>
               </div>
               <div class="form-floating mb-1">
-                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                <input type="email" class="form-control" id="email" name="E-mail" placeholder="nome@exemplo.com" required>
                 <label for="email">E-mail</label>
               </div>
               <div class="form-floating mb-1">
-                <input type="text" class="form-control" id="phone" placeholder="(99) 99999-9999">
+                <input type="text" class="form-control" id="phone" name="Telefone" placeholder="(99) 99999-9999">
                 <label for="phone">Telefone</label>
               </div>
               <div class="form-floating mb-1">
-                <input type="text" class="form-control" id="subject" placeholder="Orçamento">
+                <input type="text" class="form-control" id="subject" name="Assunto" placeholder="Orçamento">
                 <label for="subject">Assunto</label>
               </div>
               <div class="form-floating mb-1">
-                <textarea class="form-control" placeholder="Descreva a mensagem" id="message"></textarea>
+                <textarea class="form-control" placeholder="Descreva a mensagem" name="Mensagem" id="message" rows="3" required></textarea>
                 <label for="message">Mensagem</label>
               </div>
-              <button type="submit" class="btn">Enviar</button>
+              <button type="submit" class="btn" id="btn-submit" data-button>Enviar</button>
             </form>
           </div>
         </div>
